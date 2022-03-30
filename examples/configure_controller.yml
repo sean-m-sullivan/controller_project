@@ -1,6 +1,7 @@
 ---
 - name: Playbook to configure ansible Controller post installation
-  hosts: controller.node
+  hosts: localhost
+  connection: local
   vars:
     controller_validate_certs: false
   # Define following vars here, or in configs/controller_auth.yml
