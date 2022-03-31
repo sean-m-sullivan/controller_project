@@ -48,11 +48,11 @@
 
   tasks:
 
-    - name: Add Controller Settings Individually
-      include_role:
-        name: settings
-      vars:
-        controller_settings: "{{ controller_settings_individuale }}"
+#    - name: Add Controller Settings Individually
+#      include_role:
+#        name: settings
+#      vars:
+#        controller_settings: "{{ controller_settings_individuale }}"
 
     - name: Run ad hoc commands
       include_role:
