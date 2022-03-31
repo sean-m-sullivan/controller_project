@@ -1,6 +1,6 @@
 # User may add tower auth creds to this file and encrypt it using `ansible-vault`
 ---
-controller_hostname: localhost
+controller_hostname: https://controller.node
 controller_username: admin
 controller_password: secret123
 controller_validate_certs: false
