@@ -11,6 +11,9 @@ jobs:
       - name: "Install Galaxy dependencies"
         run: ansible-galaxy collection install -r collections/requirements.yml
 
-      - name: "Perform playbook tests"
-        run: ansible-playbook configure_controller.yml -e controller_hostname=${{ secrets.CONTROLLER_HOSTNAME }} -e controller_username=${{ secrets.CONTROLLER_USERNAME }} -e controller_password=${{ secrets.CONTROLLER_PASSWORD }}
+      - name: "Configure Prod"
+        run: ansible-playbook configure_controller.yml -e controller_hostname=${{ secrets.CONTROLLER_HOSTNAME }} -e controller_username=${{ secrets.CONTROLLER_USERNAME }} -e controller_password=${{ secrets.CONTROLLER_PASSWORD }} -e env_type="prod"
+
+      - name: "Configure Lab"
+        run: ansible-playbook configure_controller.yml -e controller_hostname=${{ secrets.CONTROLLER_HOSTNAME }} -e controller_username=${{ secrets.CONTROLLER_USERNAME }} -e controller_password=${{ secrets.CONTROLLER_PASSWORD }} -e env_type="lab"
 ...
