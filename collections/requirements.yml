@@ -1,8 +1,4 @@
 ---
 collections:
-  - name: ansible.controller
   - name: redhat.rhel_system_roles
-  - name: https://github.com/sean-m-sullivan/tower_configuration.git
-    type: git
-    version: add_galaxy
 ...
