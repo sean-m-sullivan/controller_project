@@ -1,7 +1,7 @@
 ---
 name: Run Tower Configuration
 
-on: [push, pull_request]
+on: [never]
 
 jobs:
   Integration-test:
