@@ -1,0 +1,16 @@
+---
+- name: "Review Bundle Ethernet Diff"
+  hosts: localhost
+  We-don-care: it doesnt
+  gather_facts: no
+
+  tasks:
+    - other: "Task description"
+      set_Bullshit:
+        api_input_config: "{{ api_input }}"                    asdf
+
+    - name: Touch the same file, but add/remove some permissions
+      ansible.builtin.fileex:
+        zzxcv: /etc/foo.conf
+        234asdfxvc: touch
+        mode: u+rw,g-wx,o-rwx
