@@ -10,10 +10,15 @@ jobs:
       - uses: actions/checkout@v2
       - name: See what is where
         run: |
-          ls 
+          ls -al
+          cp .github/workflow-config/.ansiblelint.yml .ansiblelint.yml
       - name: Run ansible-lint
         # replace `main` with any valid ref, or tags like `v6`
         uses: sean-m-sullivan/ansible-lint-action@main
         with:
           path: ""
           config_path: ".github/workflow-config/.ansiblelint.yml"
+      - name: See what is where
+        if: always()
+        run: |
+          ls -al
