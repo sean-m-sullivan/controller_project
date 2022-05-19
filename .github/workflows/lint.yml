@@ -16,8 +16,7 @@ jobs:
         # replace `main` with any valid ref, or tags like `v6`
         uses: sean-m-sullivan/ansible-lint-action@main
         with:
-          path: ""
-          config_path: ".ansiblelint.yml"
+          config_path: "${{ github.workspace }}/.github/workflow-config/.ansiblelint.yml"
       - name: See what is where
         if: always()
         run: |
