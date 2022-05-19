@@ -8,7 +8,7 @@ exclude_paths:
 - '.github/'
 - 'roles/master_role_example/'
 - 'changelogs/'
-parseable: true
+parseable: false
 use_default_rules: true
 # https://github.com/ansible/ansible-lint/issues/808
 # with verbosity set to 1, its dumping 'unknown file type messages'
@@ -16,4 +16,7 @@ use_default_rules: true
 skip_list:
 # YAML: Ansible lint doing yaml checks that we were already doing but without config.
 - yaml
+# Set output to quiet
+quiet: false
+
 ...
