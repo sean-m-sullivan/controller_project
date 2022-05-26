@@ -17,7 +17,3 @@ jobs:
         uses: sean-m-sullivan/ansible-lint-action@main
         with:
           config_path: "${{ github.workspace }}/.github/workflow-config/.ansiblelint.yml"
-      - name: See what is where
-        if: always()
-        run: |
-          ls -al
