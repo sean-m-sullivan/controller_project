@@ -11,9 +11,9 @@ jobs:
       - name: See what is where
         run: |
           ls ../
+          cd ../
           cp .ansible-lint ../.ansible-lint
           ls -a
-          cd controller_project
       - name: Run ansible-lint
         # replace `main` with any valid ref, or tags like `v6`
         uses: ansible-community/ansible-lint-action@main
