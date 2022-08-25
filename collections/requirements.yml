@@ -3,5 +3,4 @@ collections:
   - name: awx.awx
   - name: https://github.com/sean-m-sullivan/tower_configuration.git
     type: git
-    version: add_galaxy
 ...
