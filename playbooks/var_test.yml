@@ -1,7 +1,6 @@
 ---
 - name: "Review Bundle Ethernet Diff"
   hosts: localhost
-  We-don-care: it doesnt
   gather_facts: no
 
   tasks:
