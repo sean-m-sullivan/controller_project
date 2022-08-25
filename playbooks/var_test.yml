@@ -1,0 +1,14 @@
+---
+- name: "Review Bundle Ethernet Diff"
+  hosts: localhost
+  We-don-care: it doesnt
+  gather_facts: no
+
+  tasks:
+    - name: "loop through list"
+      ansible.builtin.debug:
+        msg: "An item: {{ item }}"
+      with_items:
+        - "{{ awx_job_id | default('') }}"
+        - "{{ tower_job_id | default('') }}"
+        - "{{ controller_job_id | default('') }}"
