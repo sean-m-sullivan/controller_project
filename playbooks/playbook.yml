@@ -6,7 +6,7 @@
 
   tasks:
     - other: "Task description"
-      set_Bullshit:
+      set_badthing:
         api_input_config: "{{ api_input }}"                    asdf
 
     - name: Touch the same file, but add/remove some permissions
